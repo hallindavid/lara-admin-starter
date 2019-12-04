@@ -89,6 +89,7 @@ sudo vim /etc/hosts
   * App - General - loads the menu + all panels, really just for use after authentication has been completed
   * Carded - Just like App, but will make a card/panel in the page surrounding your content
   * Top Nav - for views when you really just want to the top part/no menu on the side
+  * Carded Top Nav - same as Top Nav, but content is loaded into a card
 * Panels for
   * Sidebar (contains)
     * Logo - you should have 1 horizontal and 1 square (for small), load them via resources, and they'll be copied to public on build
