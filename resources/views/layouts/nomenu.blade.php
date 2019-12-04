@@ -45,25 +45,18 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}" rel="stylesheet">
 </head>
-<body class="hold-transition sidebar-mini layout-fixed">
+<body class="hold-transition layout-top-nav">
     <div id="app" class="wrapper"><!-- Wrapper Opening -->
 
-        @include('layouts.panels.topnav', ['layout'=>'side'])
-        @include('layouts.panels.sidemenu')
+        @include('layouts.panels.topnav', ['layout'=>'top'])
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            @include('layouts.panels.content-header', ['layout'=>'side'])
+            @include('layouts.panels.content-header', ['layout'=>'top'])
             <!-- Main content -->
             <section class="content">
-                <div class="row">
-                    <div class="col-12 px-4">
-                        <div class="card">
-                            <div class="card-body">
-                                @yield('content')
-                            </div>
-                        </div>
-                    </div>
+                <div class="container">
+                @yield('content')
                 </div>
             </section><!-- end content -->
         </div><!-- End Content-wrapper -->

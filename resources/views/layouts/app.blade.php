@@ -48,12 +48,12 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div id="app" class="wrapper"><!-- Wrapper Opening -->
 
-        @include('layouts.panels.topnav')
+        @include('layouts.panels.topnav', ['layout'=>'side'])
         @include('layouts.panels.sidemenu')
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            @include('layouts.panels.content-header')
+            @include('layouts.panels.content-header',['layout'=>'side'])
             <!-- Main content -->
             <section class="content">
                 @yield('content')
