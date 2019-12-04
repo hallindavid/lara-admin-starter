@@ -88,6 +88,7 @@ sudo vim /etc/hosts
   * External - similar to the login page on the theme - all you have to do is fill in the box
   * App - General - loads the menu + all panels, really just for use after authentication has been completed
   * Carded - Just like App, but will make a card/panel in the page surrounding your content
+  * Top Nav - for views when you really just want to the top part/no menu on the side
 * Panels for
   * Sidebar (contains)
     * Logo - you should have 1 horizontal and 1 square (for small), load them via resources, and they'll be copied to public on build
