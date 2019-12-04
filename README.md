@@ -1,8 +1,6 @@
 <h1 align="center">Welcome to lara-admin-starter 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
-  <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
-  <img src="https://img.shields.io/badge/node-%3E%3D9.3.0-blue.svg" />
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/hallindavid/lara-admin-starter" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -12,9 +10,7 @@
   <a href="#" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/hallindavid/lara-admin-starter" />
   </a>
-  <a href="https://twitter.com/david\_hallin" target="_blank">
-    <img alt="Twitter: david\_hallin" src="https://img.shields.io/twitter/follow/david\_hallin.svg?style=social" />
-  </a>
+
 </p>
 
 > Laravel 6, AdminLTE3, Vue.js, Vue-snotify, Bootstrap-Vue, Axios, Telescope, Jamesh(UUIDs)
@@ -41,6 +37,12 @@ Contributions, issues and feature requests are welcome!<br />Feel free to check 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
+
+## License
+
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+AdminLTE is a theme licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
