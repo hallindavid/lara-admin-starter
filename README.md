@@ -1,77 +1,46 @@
-# Lara-Admin-Starter
+<h1 align="center">Welcome to lara-admin-starter 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1-blue.svg?cacheSeconds=2592000" />
+  <img src="https://img.shields.io/badge/npm-%3E%3D5.5.0-blue.svg" />
+  <img src="https://img.shields.io/badge/node-%3E%3D9.3.0-blue.svg" />
+  <a href="https://github.com/hallindavid/lara-admin-starter" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/kefranabg/readme-md-generator/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/hallindavid/lara-admin-starter" />
+  </a>
+  <a href="https://twitter.com/david\_hallin" target="_blank">
+    <img alt="Twitter: david\_hallin" src="https://img.shields.io/twitter/follow/david\_hallin.svg?style=social" />
+  </a>
+</p>
 
-<!-- TABLE OF CONTENTS -->
-## Table of Contents
+> Laravel 6, AdminLTE3, Vue.js, Vue-snotify, Bootstrap-Vue, Axios, Telescope, Jamesh(UUIDs)
 
-- [Lara-Admin-Starter](#lara-admin-starter)
-  - [Table of Contents](#table-of-contents)
-  - [Built With](#built-with)
-      - [AdminLTE 3](#adminlte-3)
-      - [Laravel Framework 6.6.0](#laravel-framework-660)
-      - [FontAwesome 5.0](#fontawesome-50)
-      - [Bootstrap v4.3](#bootstrap-v43)
-  - [Getting Started](#getting-started)
-    - [Installation](#installation)
-  - [Contributing](#contributing)
-  - [Acknowledgements](#acknowledgements)
+### 🏠 [Homepage](https://github.com/hallindavid/lara-admin-starter)
 
+## Prerequisites
 
+- npm >=5.5.0
+- node >=9.3.0
 
-<!-- ABOUT THE PROJECT -->
+## Author
 
-## Built With
+👤 **David Hallin & Evan Campbell-Weiner**
 
-#### AdminLTE 3
-* [Demo](https://adminlte.io/themes/v3/index.html)
-* [Documentation](https://adminlte.io/docs/3.0/)
-* [Dependencies and Plugins](https://adminlte.io/docs/3.0/dependencies.html)
+* Twitter: [@david\_hallin](https://twitter.com/david\_hallin)
+* David's Github: [@hallindavid](https://github.com/hallindavid)
+* Evan's Github: [@evancampbellweiner](https://github.com/evancampbellweiner)
 
-#### Laravel Framework 6.6.0
-* [Installation/Configuration](https://laravel.com/docs/6.x)
+## 🤝 Contributing
 
-#### FontAwesome 5.0
-* [Basic Use](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use)
-* [Icon Library](https://fontawesome.com/icons?d=gallery)
-* [Using a Package Manager](https://fontawesome.com/how-to-use/on-the-web/setup/using-package-managers)
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/hallindavid/lara-admin-starter/issues). 
 
-#### Bootstrap v4.3
-* [Documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
+## Show your support
 
+Give a ⭐️ if this project helped you!
 
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-
-### Installation
- 
-1. Clone the repo
-```sh
-git clone https://github.com/github_username/repo.git
-```
-2. Install NPM packages
-```sh
-npm install
-```
-3. Install composer
-```sh
-composer install
-```
-4. Configure .env
-5. Migrate
-````sh
-php artisan migrate
-````
-6. Run Dev
-```sh
-npm run dev 
-```
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* [Markdown Template](https://github.com/othneildrew/Best-README-Template)
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
