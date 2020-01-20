@@ -15,7 +15,7 @@ class ChangePasswordController extends Controller
 {
     public function index()
     {
-        $breadcrumbs = [['name'=>'Dashboard', 'link'=>'/'], ['name'=>'Change Password']];
+        $breadcrumbs = [['name'=>'Dashboard', 'link'=>'/dashboard'], ['name'=>'Change Password']];
         return view('auth.passwords.change_password')->with('breadcrumbs', $breadcrumbs);
     }
 

@@ -1,3 +1,4 @@
+<!-- Content Header (Page header) -->
 @php
     $containerclass="-fluid";
     if ($layout == 'top')
@@ -6,7 +7,6 @@
     }
 @endphp
 
-<!-- Content Header (Page header) -->
 <div class="content-header">
     <div class="container{{ $containerclass }}">
         <div class="row mb-2">
@@ -14,7 +14,7 @@
             <h1 class="m-0 text-dark">@yield('title-icon') @yield('title') </h1>
         </div><!-- /.col -->
         <div class="col-sm-6">
-
+            @yield('title-button')
             @if(@isset($breadcrumbs))
                 <ol class="breadcrumb float-sm-right">
                     {{-- this will load breadcrumbs dynamically from controller --}}

@@ -29,7 +29,9 @@ class UpdateUserRequest extends FormRequest
         return [
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
-            'password'=> ['nullable','string', new StrongPassword],
+            'state'=>['nullable','string', 'max:255'],
+            'country' =>['nullable','string', 'max:255'],
+            'timezone'=>['nullable','string','max:255'],
             'is_admin'=>['boolean','nullable']
         ];
     }

@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "hallindavid/lara-admin-starter",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "A starting point for Laravel 6, AdminLTE3, and VueJS",
     "keywords": [
         "framework",
         "laravel"
@@ -10,10 +10,15 @@
     "require": {
         "php": "^7.2",
         "fideloper/proxy": "^4.0",
+        "google/cloud-dialogflow": "^0.10.0",
+        "guzzlehttp/guzzle": "^6.5",
         "jamesh/laravel-uuid": "^1.0",
+        "jenssegers/model": "^1.2",
         "laravel/framework": "^6.2",
+        "laravel/socialite": "^4.3",
         "laravel/telescope": "^2.1",
-        "laravel/tinker": "^2.0"
+        "laravel/tinker": "^2.0",
+        "nexmo/laravel": "^2.1"
     },
     "require-dev": {
         "facade/ignition": "^1.4",
@@ -40,6 +45,9 @@
         "classmap": [
             "database/seeds",
             "database/factories"
+        ],
+        "files": [
+            "app/Helpers/format_phone.php"
         ]
     },
     "autoload-dev": {

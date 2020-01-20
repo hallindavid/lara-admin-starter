@@ -12,7 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .js('resources/js/AdminLTE.js', 'public/js/adminlte.js')
+    .js('resources/js/theme/AdminLTE.js', 'public/js/adminlte.js')
     .sass('resources/sass/AdminLTE.scss', 'public/css/app.css')
     .copyDirectory('resources/plugins', 'public/plugins')
     .version();

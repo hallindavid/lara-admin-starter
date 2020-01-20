@@ -29,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/registered';
 
     /**
      * Create a new controller instance.
@@ -54,6 +54,9 @@ class RegisterController extends Controller
             'last_name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'confirmed', new StrongPassword],
+            'state'=>['nullable','string', 'max:255'],
+            'country' =>['nullable','string', 'max:255'],
+            'timezone'=>['nullable','string','max:255'],
         ]);
     }
 
@@ -66,6 +69,9 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
         return User::create([
+            'country' => $data['country'],
+            'state' => $data['state'],
+            'timezone' => $data['timezone'],
             'first_name' => $data['first_name'],
             'last_name' => $data['last_name'],
             'email' => $data['email'],

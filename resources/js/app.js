@@ -17,6 +17,8 @@ import BootstrapVue from 'bootstrap-vue'
   Vue.use(BootstrapVue)
 
 
+  Vue.use(require('vue-moment'));
+  
 // Vue.prototype.$userID = document.querySelector("meta[name='user-id']").getAttribute('content');
 // Vue.prototype.$userEmail = document.querySelector("meta[name='user-email']").getAttribute('content');
 
@@ -47,6 +49,9 @@ Vue.mixin({
 		global_error:function(title, body) {
             this.$snotify.error(body,title);
         },
+        global_warning:function(title, body) {
+            this.$snotify.warning(body,title);
+        },
         checkChanged: function(current,original) {
             var v1 = "";
             var v2 = "";
@@ -64,7 +69,16 @@ Vue.mixin({
   });
 
 
-  Vue.component('users', require('./components/Users.vue').default);
+  Vue.component('admin-users', require('./components/Admin/User/Users.vue').default);
+  Vue.component('admin-organizations', require('./components/Admin/Organizations.vue').default);
+  
+  Vue.component('create-organization', require('./components/CreateOrganization.vue').default);
+  Vue.component('change-organization', require('./components/ChangeOrganization.vue').default);
+
+  Vue.component('org-user-management', require('./components/OrgAdmin/UserManagement.vue').default);
+  
+  Vue.component('user-preferences', require('./components/User/Preferences.vue').default);
+
 
 const app = new Vue({
   el: '#app'

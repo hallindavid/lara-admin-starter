@@ -2,6 +2,14 @@
 
 namespace App\Providers;
 
+//Models
+use App\User;
+use App\Organization;
+
+//Observers
+use App\Observers\UserObserver;
+use App\Observers\OrganizationObserver;
+
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -23,6 +31,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        if ($this->app->isLocal()) {
+            $this->app->register(TelescopeServiceProvider::class);
+        }
+        
+        Organization::observe(OrganizationObserver::class);
+        User::observe(UserObserver::class);
     }
 }

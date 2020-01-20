@@ -3,12 +3,10 @@
 @section('content')
 
 <div class="login-box">
-        <div class="login-logo">
-        <a href="/">{{ config('app.name', 'Laravel') }}</a>
-        </div>
         <!-- /.login-logo -->
         <div class="card">
           <div class="card-body login-card-body">
+                <center><img src="{{ asset('images/icon.png') }}" width="90px"/></center>
             <p class="login-box-msg">Reset Password</p>
             @if (session('status'))
                         <div class="alert alert-success" role="alert">

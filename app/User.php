@@ -3,15 +3,16 @@
 namespace App;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Support\Str;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Jamesh\Uuid\HasUuid;
 use Illuminate\Contracts\Auth\CanResetPassword;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Carbon;
 
 class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
 {
-    use Notifiable, HasUuid, SoftDeletes;
+    use Notifiable, SoftDeletes;
 
     /**
      * The attributes that are mass assignable.
@@ -19,7 +20,7 @@ class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
      * @var array
      */
     protected $fillable = [
-        'first_name', 'last_name', 'email', 'password', 'is_admin', 'active'
+        'name', 'first_name', 'last_name', 'email', 'password','google_id','timezone','country','state'
     ];
 
     /**
@@ -39,11 +40,6 @@ class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-
-
-    public $incrementing = false;
-    protected $keyType = 'string';
 
     /**
      * setEmailAttribute will make all emails lowercase
@@ -68,48 +64,49 @@ class User extends Authenticatable implements MustVerifyEmail, CanResetPassword
         $this->notify(new ResetPasswordNotification($token));
     }
 
-    public function user_permissions()
+    public function has_preferences()
     {
-        return $this->hasMany('App\UserPermission');
+        return ((strlen($this->timezone) > 2) && (strlen($this->state) > 2) && (strlen($this->country) > 2));
     }
 
     /**
-     * This returns the full list of permissions that the user belongs too
+     * defines the relationship to organizations which are owned by the user
      *
-     * @param null
-     * @return array of permissions the user has
+     * @return void
      */
-    public function permissions()
+    public function owned_orgs()
     {
-        return $this->hasManyThrough(
-            'App\Permission',
-            'App\UserPermission',
-            'user_id', // Foreign key on users table...
-            'id', // Foreign key on posts table...
-            'id', // Local key on countries table...
-            'permission_id' // Local key on users table...
-        );
+        return $this->hasMany('App\Organization');
     }
 
-    /**
-     * This returns whether a user has permission based off of the parameter
-     *
-     * @param $permission -> string value of the title of the permission
-     * @return true or false
-     */
-    public function amI($permission)
-    {
-        return ($this->permissions()->where('title', $permission)->get()->count() > 0);
+    public function current_org() {
+        return $this->hasOne('App\Organization', 'id','current_organization');
     }
 
-    /**
-     * This returns whether a user has permission based off of the parameter
-     *
-     * @param $permission -> string value of the title of the permission
-     * @return true or false
-     */
-    public function grant_permission_to_user($permissionID)
+    public function current_org_name()
     {
-        $this->user_permissions()->save(new UserPermission(['permission_id'=>$permissionID]));
+        if ($this->current_org()->exists()) {
+            return $this->current_org->name;
+        }
+        return "";
+    }
+
+    public function organizations() {
+        return $this->belongsToMany('App\Organization', 'organization_users')->withTimestamps();
+    }
+
+    public function has_org_access($org_id)
+    {
+        return ($this->organizations->where('id',$org_id)->count() > 0);
+    }
+
+    public function pending_invites() {
+        return (\App\OrgInvitation::where('email_address',$this->email)->where('responded', false)->get());
+    }
+    
+    public function fresh_token()
+    {
+        $this->api_token = Str::random(80);
+        $this->save();
     }
 }

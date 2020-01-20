@@ -3,12 +3,10 @@
 @section('content')
 
     <div class="login-box">
-        <div class="login-logo">
-        <a href="/">{{ config('app.name', 'Laravel') }}</a>
-        </div>
         <!-- /.login-logo -->
         <div class="card">
           <div class="card-body login-card-body">
+                <center><img src="{{ asset('images/icon.png') }}" width="90px"/></center>
           <p class="login-box-msg">{{ __('Reset Password') }}</p>
 
             <form method="POST" action="{{ route('password.update') }}">

@@ -27,11 +27,15 @@ class CreateUserRequest extends FormRequest
     public function rules()
     {
         return [
+            'username' =>['required', 'unique:users','string', 'max:255'],
             'first_name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
             'password'=> ['string', new StrongPassword],
             'is_admin'=>['boolean','nullable'],
             'email'=>['required','unique:users', 'string','email','max:255'],
+            'state'=>['nullable','string', 'max:255'],
+            'country' =>['nullable','string', 'max:255'],
+            'timezone'=>['nullable','string','max:255']
         ];
     }
 }

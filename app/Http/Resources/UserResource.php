@@ -4,7 +4,6 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 use App\Http\Resources\PermissionResource;
-
 class UserResource extends JsonResource
 {
     /**
@@ -20,8 +19,11 @@ class UserResource extends JsonResource
             'first_name'=>$this->first_name,
             'last_name'=>$this->last_name,
             'email'=>$this->email,
-            'is_admin'=>($this->is_admin ? true : false),
-            'permissions'=>$this->permissions->pluck('id')->all()
+            'username'=>$this->username,
+            'timezone'=>$this->timezone,
+            'state'=>$this->state,
+            'country'=>$this->country,
+            'is_admin'=>($this->is_admin ? true : false)
         );
     }
 }

@@ -86,43 +86,43 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./resources/js/AdminLTE.js":
-/*!**********************************!*\
-  !*** ./resources/js/AdminLTE.js ***!
-  \**********************************/
+/***/ "./resources/js/theme/AdminLTE.js":
+/*!****************************************!*\
+  !*** ./resources/js/theme/AdminLTE.js ***!
+  \****************************************/
 /*! exports provided: ControlSidebar, Layout, PushMenu, Treeview, DirectChat, TodoList, CardWidget, CardRefresh, Dropdown, Toasts */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ControlSidebar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ControlSidebar */ "./resources/js/ControlSidebar.js");
+/* harmony import */ var _ControlSidebar__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ControlSidebar */ "./resources/js/theme/ControlSidebar.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ControlSidebar", function() { return _ControlSidebar__WEBPACK_IMPORTED_MODULE_0__["default"]; });
 
-/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout */ "./resources/js/Layout.js");
+/* harmony import */ var _Layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Layout */ "./resources/js/theme/Layout.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Layout", function() { return _Layout__WEBPACK_IMPORTED_MODULE_1__["default"]; });
 
-/* harmony import */ var _PushMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PushMenu */ "./resources/js/PushMenu.js");
+/* harmony import */ var _PushMenu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PushMenu */ "./resources/js/theme/PushMenu.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PushMenu", function() { return _PushMenu__WEBPACK_IMPORTED_MODULE_2__["default"]; });
 
-/* harmony import */ var _Treeview__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Treeview */ "./resources/js/Treeview.js");
+/* harmony import */ var _Treeview__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Treeview */ "./resources/js/theme/Treeview.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Treeview", function() { return _Treeview__WEBPACK_IMPORTED_MODULE_3__["default"]; });
 
-/* harmony import */ var _DirectChat__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./DirectChat */ "./resources/js/DirectChat.js");
+/* harmony import */ var _DirectChat__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./DirectChat */ "./resources/js/theme/DirectChat.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "DirectChat", function() { return _DirectChat__WEBPACK_IMPORTED_MODULE_4__["default"]; });
 
-/* harmony import */ var _TodoList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./TodoList */ "./resources/js/TodoList.js");
+/* harmony import */ var _TodoList__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./TodoList */ "./resources/js/theme/TodoList.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "TodoList", function() { return _TodoList__WEBPACK_IMPORTED_MODULE_5__["default"]; });
 
-/* harmony import */ var _CardWidget__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CardWidget */ "./resources/js/CardWidget.js");
+/* harmony import */ var _CardWidget__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CardWidget */ "./resources/js/theme/CardWidget.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CardWidget", function() { return _CardWidget__WEBPACK_IMPORTED_MODULE_6__["default"]; });
 
-/* harmony import */ var _CardRefresh__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CardRefresh */ "./resources/js/CardRefresh.js");
+/* harmony import */ var _CardRefresh__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CardRefresh */ "./resources/js/theme/CardRefresh.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CardRefresh", function() { return _CardRefresh__WEBPACK_IMPORTED_MODULE_7__["default"]; });
 
-/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Dropdown */ "./resources/js/Dropdown.js");
+/* harmony import */ var _Dropdown__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./Dropdown */ "./resources/js/theme/Dropdown.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Dropdown", function() { return _Dropdown__WEBPACK_IMPORTED_MODULE_8__["default"]; });
 
-/* harmony import */ var _Toasts__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Toasts */ "./resources/js/Toasts.js");
+/* harmony import */ var _Toasts__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Toasts */ "./resources/js/theme/Toasts.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Toasts", function() { return _Toasts__WEBPACK_IMPORTED_MODULE_9__["default"]; });
 
 
@@ -139,10 +139,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/CardRefresh.js":
-/*!*************************************!*\
-  !*** ./resources/js/CardRefresh.js ***!
-  \*************************************/
+/***/ "./resources/js/theme/CardRefresh.js":
+/*!*******************************************!*\
+  !*** ./resources/js/theme/CardRefresh.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -330,10 +330,10 @@ var CardRefresh = function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/CardWidget.js":
-/*!************************************!*\
-  !*** ./resources/js/CardWidget.js ***!
-  \************************************/
+/***/ "./resources/js/theme/CardWidget.js":
+/*!******************************************!*\
+  !*** ./resources/js/theme/CardWidget.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -606,10 +606,10 @@ var CardWidget = function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/ControlSidebar.js":
-/*!****************************************!*\
-  !*** ./resources/js/ControlSidebar.js ***!
-  \****************************************/
+/***/ "./resources/js/theme/ControlSidebar.js":
+/*!**********************************************!*\
+  !*** ./resources/js/theme/ControlSidebar.js ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -906,10 +906,10 @@ var ControlSidebar = function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/DirectChat.js":
-/*!************************************!*\
-  !*** ./resources/js/DirectChat.js ***!
-  \************************************/
+/***/ "./resources/js/theme/DirectChat.js":
+/*!******************************************!*\
+  !*** ./resources/js/theme/DirectChat.js ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1019,10 +1019,10 @@ var DirectChat = function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/Dropdown.js":
-/*!**********************************!*\
-  !*** ./resources/js/Dropdown.js ***!
-  \**********************************/
+/***/ "./resources/js/theme/Dropdown.js":
+/*!****************************************!*\
+  !*** ./resources/js/theme/Dropdown.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1147,10 +1147,10 @@ var Dropdown = function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/Layout.js":
-/*!********************************!*\
-  !*** ./resources/js/Layout.js ***!
-  \********************************/
+/***/ "./resources/js/theme/Layout.js":
+/*!**************************************!*\
+  !*** ./resources/js/theme/Layout.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1377,10 +1377,10 @@ var Layout = function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/PushMenu.js":
-/*!**********************************!*\
-  !*** ./resources/js/PushMenu.js ***!
-  \**********************************/
+/***/ "./resources/js/theme/PushMenu.js":
+/*!****************************************!*\
+  !*** ./resources/js/theme/PushMenu.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1627,10 +1627,10 @@ var PushMenu = function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/Toasts.js":
-/*!********************************!*\
-  !*** ./resources/js/Toasts.js ***!
-  \********************************/
+/***/ "./resources/js/theme/Toasts.js":
+/*!**************************************!*\
+  !*** ./resources/js/theme/Toasts.js ***!
+  \**************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1871,10 +1871,10 @@ var Toasts = function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/TodoList.js":
-/*!**********************************!*\
-  !*** ./resources/js/TodoList.js ***!
-  \**********************************/
+/***/ "./resources/js/theme/TodoList.js":
+/*!****************************************!*\
+  !*** ./resources/js/theme/TodoList.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2017,10 +2017,10 @@ var TodoList = function ($) {
 
 /***/ }),
 
-/***/ "./resources/js/Treeview.js":
-/*!**********************************!*\
-  !*** ./resources/js/Treeview.js ***!
-  \**********************************/
+/***/ "./resources/js/theme/Treeview.js":
+/*!****************************************!*\
+  !*** ./resources/js/theme/Treeview.js ***!
+  \****************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2229,13 +2229,13 @@ var Treeview = function ($) {
 /***/ }),
 
 /***/ 1:
-/*!****************************************!*\
-  !*** multi ./resources/js/AdminLTE.js ***!
-  \****************************************/
+/*!**********************************************!*\
+  !*** multi ./resources/js/theme/AdminLTE.js ***!
+  \**********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/dave/lararepos/new-platform-test/resources/js/AdminLTE.js */"./resources/js/AdminLTE.js");
+module.exports = __webpack_require__(/*! /Users/dave/lararepos/new-platform-test/resources/js/theme/AdminLTE.js */"./resources/js/theme/AdminLTE.js");
 
 
 /***/ })

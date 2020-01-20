@@ -35,15 +35,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-      <!-- Font Awesome -->
-    <link href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
-
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('images/favicon.ico') }}">
-    <!-- Styles -->
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}" rel="stylesheet">
+    @include('layouts.includes.styles')
 </head>
 <body class="hold-transition layout-top-nav">
     <div id="app" class="wrapper"><!-- Wrapper Opening -->
@@ -73,19 +65,7 @@
     </div><!-- #app .wrapper closing -->
 <!-- Scripts -->
 
-<!-- jQuery -->
-<script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="{{ asset('plugins/jquery-ui/jquery-ui.min.js') }}"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
-<!-- Bootstrap 4 -->
-<script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-<script src="{{ asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
-<script src="{{ mix('js/adminlte.js') }}"></script>
-<script src="{{ mix('js/app.js') }}"></script>
+@include('layouts.includes.scripts')
 </body>
 
 </html>

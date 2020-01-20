@@ -20,6 +20,6 @@ class IsAdminMiddleware
             return $next($request);
         }
 
-        return redirect('/');
+        return redirect('/dashboard')->withErrors('You must be a system administrator to perform that function');
     }
 }
